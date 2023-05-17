@@ -1,0 +1,39 @@
+#parent {
+	margin: 0 auto;
+	width: 400px;
+}
+.tab {
+	margin-bottom: 10px;	
+}
+
+.tab .link a {
+	display: flex;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	background: #ebc7df;
+	border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.tab .link:hover a {
+	background: #d8bfd8;
+}
+
+
+.tab:not(.active) .text {
+	overflow: hidden;
+	height: 0;
+	transition-duration: 0.5s;
+}
+
+.tab .text {
+	height: 150px;
+	margin-bottom: 0.5rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+	  transition-duration: 0.5s;
+	
+}
